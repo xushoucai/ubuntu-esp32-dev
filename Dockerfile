@@ -4,7 +4,7 @@ LABEL Description="Image for building and debugging arm-embedded projects from g
 WORKDIR /work
 
 ADD . /work
-ADD ~/esp
+ADD . ~/esp
 
 RUN apt-get install -y git wget make libncurses-dev flex bison gperf python python-serial ccache
 
