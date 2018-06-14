@@ -1,6 +1,6 @@
-FROM ubuntu:18.04
+FROM ubuntu:16.04
 MAINTAINER Lucas Hutchinson <lucas.hutchinson@gmail.com>
-LABEL Description="Image for building and debugging arm-embedded projects from git"
+LABEL Description="Image for building esp32 projects from git"
 WORKDIR /work
 
 ADD . /work
