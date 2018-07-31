@@ -6,7 +6,7 @@ WORKDIR /work
 ADD . /work
 RUN mkdir -p ~/esp
 
-RUN apt-get update && apt-get install -y git wget make libncurses-dev flex bison gperf python python-serial ccache
+RUN apt-get update && apt-get install -y git wget make libncurses-dev flex bison gperf python python-serial ccache curl
 
 RUN cd ~/esp && \
     wget https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-80-g6c4433a-5.2.0.tar.gz && \
